@@ -5,7 +5,7 @@ import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from '@/comp
 const meta = {
   title: 'UI/InputOtp',
   component: InputOTP,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof InputOTP>
 

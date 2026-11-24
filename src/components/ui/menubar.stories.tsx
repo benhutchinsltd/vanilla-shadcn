@@ -5,7 +5,7 @@ import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarSeparator, Me
 const meta = {
   title: 'UI/Menubar',
   component: Menubar,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Menubar>
 

@@ -5,7 +5,7 @@ import { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, Breadcr
 const meta = {
   title: 'UI/Breadcrumb',
   component: Breadcrumb,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Breadcrumb>
 

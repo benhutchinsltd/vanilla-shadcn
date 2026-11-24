@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge'
 const meta = {
   title: 'UI/Badge',
   component: Badge,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Badge>
 

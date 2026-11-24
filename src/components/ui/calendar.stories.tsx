@@ -10,7 +10,7 @@ function CalendarDemo() {
 const meta = {
   title: 'UI/Calendar',
   component: Calendar,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Calendar>
 

@@ -5,7 +5,7 @@ import { Message, MessageContent, MessageGroup, MessageHeader, MessageFooter } f
 const meta = {
   title: 'UI/Message',
   component: Message,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Message>
 
@@ -14,6 +14,6 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <MessageGroup className="w-96"><Message align="start"><MessageHeader>Assistant</MessageHeader><MessageContent>Here is a summary of your document.</MessageContent><MessageFooter>10:42</MessageFooter></Message><Message align="end"><MessageContent>Thanks, that is great.</MessageContent><MessageFooter>10:43</MessageFooter></Message></MessageGroup>
+    <MessageGroup className="w-full max-w-sm"><Message align="start"><MessageHeader>Assistant</MessageHeader><MessageContent>Here is a summary of your document.</MessageContent><MessageFooter>10:42</MessageFooter></Message><Message align="end"><MessageContent>Thanks, that is great.</MessageContent><MessageFooter>10:43</MessageFooter></Message></MessageGroup>
   ),
 }

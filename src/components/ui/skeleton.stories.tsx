@@ -5,7 +5,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 const meta = {
   title: 'UI/Skeleton',
   component: Skeleton,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Skeleton>
 

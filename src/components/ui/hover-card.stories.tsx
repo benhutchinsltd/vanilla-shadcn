@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 const meta = {
   title: 'UI/HoverCard',
   component: HoverCard,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof HoverCard>
 
@@ -15,6 +15,6 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <HoverCard><HoverCardTrigger render={<Button variant="link" />}>@nextjs</HoverCardTrigger><HoverCardContent className="w-72"><p className="text-sm">The React Framework – created and maintained by @vercel.</p></HoverCardContent></HoverCard>
+    <HoverCard><HoverCardTrigger render={<Button variant="link" />}>@nextjs</HoverCardTrigger><HoverCardContent className="w-full max-w-sm"><p className="text-sm">The React Framework – created and maintained by @vercel.</p></HoverCardContent></HoverCard>
   ),
 }

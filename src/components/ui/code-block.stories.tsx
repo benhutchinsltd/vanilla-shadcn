@@ -6,7 +6,7 @@ const code = 'npx shadcn@latest add button'
 const meta = {
   title: 'UI/CodeBlock',
   component: CodeBlock,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof CodeBlock>
 
@@ -15,12 +15,12 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <CodeBlock className="w-96"><CodeBlockHeader><CodeBlockTitle>Terminal</CodeBlockTitle><CodeBlockActions><CodeBlockCopyButton value={code} /></CodeBlockActions></CodeBlockHeader><CodeBlockContent><code>{code}</code></CodeBlockContent></CodeBlock>
+    <CodeBlock className="w-full max-w-sm"><CodeBlockHeader><CodeBlockTitle>Terminal</CodeBlockTitle><CodeBlockActions><CodeBlockCopyButton value={code} /></CodeBlockActions></CodeBlockHeader><CodeBlockContent><code>{code}</code></CodeBlockContent></CodeBlock>
   ),
 }
 
 export const Destructive: Story = {
   render: () => (
-    <CodeBlock variant="destructive" className="w-96"><CodeBlockContent><code>rm -rf ./build</code></CodeBlockContent></CodeBlock>
+    <CodeBlock variant="destructive" className="w-full max-w-sm"><CodeBlockContent><code>rm -rf ./build</code></CodeBlockContent></CodeBlock>
   ),
 }

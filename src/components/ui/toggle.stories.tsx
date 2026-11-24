@@ -6,7 +6,7 @@ import { Toggle } from '@/components/ui/toggle'
 const meta = {
   title: 'UI/Toggle',
   component: Toggle,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Toggle>
 

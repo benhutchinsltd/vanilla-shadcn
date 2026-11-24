@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarGroup, AvatarImage } from '@/components/u
 const meta = {
   title: 'UI/Avatar',
   component: Avatar,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Avatar>
 

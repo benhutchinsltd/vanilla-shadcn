@@ -6,7 +6,7 @@ import { Marker, MarkerContent, MarkerIcon } from '@/components/ui/marker'
 const meta = {
   title: 'UI/Marker',
   component: Marker,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Marker>
 
@@ -21,6 +21,6 @@ export const Default: Story = {
 
 export const WithBorder: Story = {
   render: () => (
-    <Marker variant="border" className="w-72"><MarkerContent>Yesterday</MarkerContent></Marker>
+    <Marker variant="border" className="w-full max-w-sm"><MarkerContent>Yesterday</MarkerContent></Marker>
   ),
 }

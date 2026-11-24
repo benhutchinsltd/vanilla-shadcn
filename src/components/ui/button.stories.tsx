@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 const meta = {
   title: 'UI/Button',
   component: Button,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Button>
 

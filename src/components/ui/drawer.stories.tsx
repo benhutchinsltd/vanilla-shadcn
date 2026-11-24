@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 const meta = {
   title: 'UI/Drawer',
   component: Drawer,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Drawer>
 

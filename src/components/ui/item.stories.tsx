@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 const meta = {
   title: 'UI/Item',
   component: Item,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Item>
 
@@ -16,6 +16,6 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <Item variant="outline" className="w-96"><ItemMedia variant="icon"><Inbox /></ItemMedia><ItemContent><ItemTitle>Inbox</ItemTitle><ItemDescription>You have 3 unread messages.</ItemDescription></ItemContent><ItemActions><Button size="sm" variant="outline">Open</Button></ItemActions></Item>
+    <Item variant="outline" className="w-full max-w-sm"><ItemMedia variant="icon"><Inbox /></ItemMedia><ItemContent><ItemTitle>Inbox</ItemTitle><ItemDescription>You have 3 unread messages.</ItemDescription></ItemContent><ItemActions><Button size="sm" variant="outline">Open</Button></ItemActions></Item>
   ),
 }

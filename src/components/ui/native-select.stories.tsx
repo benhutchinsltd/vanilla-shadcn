@@ -5,7 +5,7 @@ import { NativeSelect, NativeSelectOption } from '@/components/ui/native-select'
 const meta = {
   title: 'UI/NativeSelect',
   component: NativeSelect,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof NativeSelect>
 

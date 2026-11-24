@@ -6,7 +6,7 @@ const frameworks = ['Next.js', 'SvelteKit', 'Nuxt.js', 'Remix', 'Astro']
 const meta = {
   title: 'UI/Combobox',
   component: Combobox,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Combobox>
 

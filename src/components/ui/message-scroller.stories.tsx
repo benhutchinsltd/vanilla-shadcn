@@ -5,7 +5,7 @@ import { MessageScroller, MessageScrollerButton, MessageScrollerContent, Message
 const meta = {
   title: 'UI/MessageScroller',
   component: MessageScrollerProvider,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof MessageScrollerProvider>
 
@@ -14,6 +14,6 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <MessageScrollerProvider><MessageScroller className="h-64 w-80 rounded-md border"><MessageScrollerViewport><MessageScrollerContent>{Array.from({ length: 20 }, (_, i) => (<MessageScrollerItem key={i} className="px-3 py-1 text-sm">Message {i + 1}</MessageScrollerItem>))}</MessageScrollerContent></MessageScrollerViewport><MessageScrollerButton /></MessageScroller></MessageScrollerProvider>
+    <MessageScrollerProvider><MessageScroller className="h-64 w-full max-w-sm rounded-md border"><MessageScrollerViewport><MessageScrollerContent>{Array.from({ length: 20 }, (_, i) => (<MessageScrollerItem key={i} className="px-3 py-1 text-sm">Message {i + 1}</MessageScrollerItem>))}</MessageScrollerContent></MessageScrollerViewport><MessageScrollerButton /></MessageScroller></MessageScrollerProvider>
   ),
 }

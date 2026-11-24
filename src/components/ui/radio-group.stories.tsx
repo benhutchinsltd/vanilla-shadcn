@@ -6,7 +6,7 @@ import { Label } from '@/components/ui/label'
 const meta = {
   title: 'UI/RadioGroup',
   component: RadioGroup,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof RadioGroup>
 

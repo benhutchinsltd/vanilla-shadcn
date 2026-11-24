@@ -6,7 +6,7 @@ import { InputGroup, InputGroupAddon, InputGroupInput, InputGroupText } from '@/
 const meta = {
   title: 'UI/InputGroup',
   component: InputGroup,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof InputGroup>
 
@@ -15,6 +15,6 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <div className="grid w-80 gap-3"><InputGroup><InputGroupInput placeholder="Search..." /><InputGroupAddon><Search /></InputGroupAddon></InputGroup><InputGroup><InputGroupAddon><InputGroupText>https://</InputGroupText></InputGroupAddon><InputGroupInput placeholder="example.com" /></InputGroup></div>
+    <div className="grid w-full max-w-sm gap-3"><InputGroup><InputGroupInput placeholder="Search..." /><InputGroupAddon><Search /></InputGroupAddon></InputGroup><InputGroup><InputGroupAddon><InputGroupText>https://</InputGroupText></InputGroupAddon><InputGroupInput placeholder="example.com" /></InputGroup></div>
   ),
 }

@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 const meta = {
   title: 'UI/Popover',
   component: Popover,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Popover>
 
@@ -15,6 +15,6 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <Popover><PopoverTrigger render={<Button variant="outline" />}>Open popover</PopoverTrigger><PopoverContent className="w-72"><p className="text-sm">Place content for the popover here.</p></PopoverContent></Popover>
+    <Popover><PopoverTrigger render={<Button variant="outline" />}>Open popover</PopoverTrigger><PopoverContent className="w-full max-w-sm"><p className="text-sm">Place content for the popover here.</p></PopoverContent></Popover>
   ),
 }

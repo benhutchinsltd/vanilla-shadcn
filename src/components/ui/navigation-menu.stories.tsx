@@ -5,7 +5,7 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMe
 const meta = {
   title: 'UI/NavigationMenu',
   component: NavigationMenu,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof NavigationMenu>
 

@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 const meta = {
   title: 'UI/Empty',
   component: Empty,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Empty>
 
@@ -16,6 +16,6 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <Empty className="w-96 border"><EmptyHeader><EmptyMedia variant="icon"><Inbox /></EmptyMedia><EmptyTitle>No messages</EmptyTitle><EmptyDescription>You are all caught up. New messages will appear here.</EmptyDescription></EmptyHeader><EmptyContent><Button>Compose</Button></EmptyContent></Empty>
+    <Empty className="w-full max-w-sm border"><EmptyHeader><EmptyMedia variant="icon"><Inbox /></EmptyMedia><EmptyTitle>No messages</EmptyTitle><EmptyDescription>You are all caught up. New messages will appear here.</EmptyDescription></EmptyHeader><EmptyContent><Button>Compose</Button></EmptyContent></Empty>
   ),
 }

@@ -6,7 +6,7 @@ import { Label } from '@/components/ui/label'
 const meta = {
   title: 'UI/Switch',
   component: Switch,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Switch>
 

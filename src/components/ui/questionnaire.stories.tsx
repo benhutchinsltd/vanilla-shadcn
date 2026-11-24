@@ -5,7 +5,7 @@ import { Questionnaire, QuestionnaireActions, QuestionnaireChoice, Questionnaire
 const meta = {
   title: 'UI/Questionnaire',
   component: Questionnaire,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Questionnaire>
 
@@ -14,6 +14,6 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <Questionnaire className="w-96"><QuestionnaireProgress /><QuestionnaireItem name="colour"><QuestionnaireTitle>Favourite colour?</QuestionnaireTitle><QuestionnaireChoices><QuestionnaireChoice value="red">Red</QuestionnaireChoice><QuestionnaireChoice value="blue">Blue</QuestionnaireChoice></QuestionnaireChoices></QuestionnaireItem><QuestionnaireActions><QuestionnaireNext /><QuestionnaireSubmit /></QuestionnaireActions></Questionnaire>
+    <Questionnaire className="w-full max-w-sm"><QuestionnaireProgress /><QuestionnaireItem name="colour"><QuestionnaireTitle>Favourite colour?</QuestionnaireTitle><QuestionnaireChoices><QuestionnaireChoice value="red">Red</QuestionnaireChoice><QuestionnaireChoice value="blue">Blue</QuestionnaireChoice></QuestionnaireChoices></QuestionnaireItem><QuestionnaireActions><QuestionnaireNext /><QuestionnaireSubmit /></QuestionnaireActions></Questionnaire>
   ),
 }

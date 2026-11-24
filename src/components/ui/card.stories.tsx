@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 const meta = {
   title: 'UI/Card',
   component: Card,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Card>
 
@@ -15,7 +15,7 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <Card className="w-96">
+    <Card className="w-full max-w-sm">
       <CardHeader><CardTitle>Create project</CardTitle><CardDescription>Deploy your new project in one click.</CardDescription><CardAction><Button variant="link">Help</Button></CardAction></CardHeader>
       <CardContent><p className="text-sm text-muted-foreground">Your project will be created with sensible defaults.</p></CardContent>
       <CardFooter className="justify-between"><Button variant="outline">Cancel</Button><Button>Deploy</Button></CardFooter>

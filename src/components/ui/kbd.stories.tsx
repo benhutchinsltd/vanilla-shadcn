@@ -5,7 +5,7 @@ import { Kbd, KbdGroup } from '@/components/ui/kbd'
 const meta = {
   title: 'UI/Kbd',
   component: Kbd,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Kbd>
 

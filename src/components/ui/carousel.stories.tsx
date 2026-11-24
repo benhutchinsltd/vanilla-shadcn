@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card'
 const meta = {
   title: 'UI/Carousel',
   component: Carousel,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Carousel>
 

@@ -18,7 +18,7 @@ const config = {
 const meta = {
   title: 'UI/Chart',
   component: ChartContainer,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof ChartContainer>
 
@@ -27,6 +27,6 @@ type Story = StoryObj
 
 export const Default: Story = {
   render: () => (
-    <ChartContainer config={config} className="h-64 w-[28rem]"><BarChart data={data}><CartesianGrid vertical={false} /><XAxis dataKey="month" tickLine={false} axisLine={false} /><ChartTooltip content={<ChartTooltipContent />} /><Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} /><Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} /></BarChart></ChartContainer>
+    <ChartContainer config={config} className="h-64 w-full max-w-md"><BarChart data={data}><CartesianGrid vertical={false} /><XAxis dataKey="month" tickLine={false} axisLine={false} /><ChartTooltip content={<ChartTooltipContent />} /><Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} /><Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} /></BarChart></ChartContainer>
   ),
 }

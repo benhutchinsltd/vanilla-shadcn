@@ -6,7 +6,7 @@ import { Attachment, AttachmentContent, AttachmentDescription, AttachmentGroup, 
 const meta = {
   title: 'UI/Attachment',
   component: Attachment,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'padded' },
   tags: ['autodocs'],
 } satisfies Meta<typeof Attachment>
 
